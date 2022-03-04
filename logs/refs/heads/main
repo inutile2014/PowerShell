@@ -1,0 +1,15 @@
+0000000000000000000000000000000000000000 05f7ee693814acd711005cc3be40bac9fffe5926 inutile2014 <inutile2014@gmail.com> 1646044599 -0500	commit (initial): first commit
+05f7ee693814acd711005cc3be40bac9fffe5926 45366deecbb977c878c4fedc3f036f2e2299e62e inutile2014 <inutile2014@gmail.com> 1646045218 -0500	commit: Add concol.log to main.js
+45366deecbb977c878c4fedc3f036f2e2299e62e f2a6c92160aaa20c877764679337382de9cdffad inutile2014 <inutile2014@gmail.com> 1646045606 -0500	commit: Add body to style.css
+f2a6c92160aaa20c877764679337382de9cdffad 63b03c38f5cb199d645634cae1833a3eccfb9d2c inutile2014 <inutile2014@gmail.com> 1646045783 -0500	commit (amend): add empty body tag to stlye.css
+63b03c38f5cb199d645634cae1833a3eccfb9d2c 63b03c38f5cb199d645634cae1833a3eccfb9d2c inutile2014 <inutile2014@gmail.com> 1646051301 -0500	Branch: renamed refs/heads/Dev to refs/heads/main
+63b03c38f5cb199d645634cae1833a3eccfb9d2c 63b03c38f5cb199d645634cae1833a3eccfb9d2c inutile2014 <inutile2014@gmail.com> 1646051391 -0500	Branch: renamed refs/heads/main to refs/heads/main
+63b03c38f5cb199d645634cae1833a3eccfb9d2c 63b03c38f5cb199d645634cae1833a3eccfb9d2c inutile2014 <inutile2014@gmail.com> 1646053777 -0500	Branch: renamed refs/heads/main to refs/heads/main
+63b03c38f5cb199d645634cae1833a3eccfb9d2c 63b03c38f5cb199d645634cae1833a3eccfb9d2c inutile2014 <inutile2014@gmail.com> 1646053786 -0500	Branch: renamed refs/heads/main to refs/heads/main
+63b03c38f5cb199d645634cae1833a3eccfb9d2c 63b03c38f5cb199d645634cae1833a3eccfb9d2c inutile2014 <inutile2014@gmail.com> 1646054356 -0500	Branch: renamed refs/heads/main to refs/heads/main
+63b03c38f5cb199d645634cae1833a3eccfb9d2c b54648198bd281afebed38336bccf46daa957025 inutile2014 <inutile2014@gmail.com> 1646055151 -0500	commit: added main.go with empty func
+b54648198bd281afebed38336bccf46daa957025 fffd40dd69e022b337c8395fa421c74cf175128c inutile2014 <inutile2014@gmail.com> 1646055482 -0500	pull: Fast-forward
+fffd40dd69e022b337c8395fa421c74cf175128c 7bc623837068c810799613e8f82969e55594093d inutile2014 <inutile2014@gmail.com> 1646055588 -0500	commit: Edit README.md
+7bc623837068c810799613e8f82969e55594093d 242fe0a49b8e3b4b33962845e71a8a2adb15fe54 inutile2014 <inutile2014@gmail.com> 1646055732 -0500	pull: Fast-forward
+242fe0a49b8e3b4b33962845e71a8a2adb15fe54 80e77579b433da773de3d6a8f8ad912602d6e7d1 inutile2014 <inutile2014@gmail.com> 1646057919 -0500	pull: Fast-forward
+80e77579b433da773de3d6a8f8ad912602d6e7d1 27942269f4448dfffcb2be9471d5a77de483046b inutile2014 <inutile2014@gmail.com> 1646060188 -0500	pull: Fast-forward
