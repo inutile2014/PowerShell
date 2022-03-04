@@ -18,7 +18,7 @@ Check Antivirus Programm
 Get-WmiObject -Namespace "root\SecurityCenter2" -Class AntiVirusProduct
 
 Echo in PS:
-Write-Host "Hello"
+Write-Host "Hello one"
 Variabele: ($VariableName)
  $Hello = "Hello two"
 Write-Host  $Hello
